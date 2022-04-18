@@ -5,7 +5,7 @@ include vendor/aosp/config/BoardConfigQcom.mk
 endif
 
 # Custom AVB Key
-ifeq ($(EXTENDED_BUILD_TYPE), OFFICIAL)
+ifeq ($(CYCLONE_BUILD_TYPE), RELEASE)
 ifeq ($(TARGET_USES_CUSTOM_AVB_KEY),true)
 include vendor/aosp/config/BoardConfigAvb.mk
 endif
